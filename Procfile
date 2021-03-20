@@ -1,1 +1,1 @@
-tor: ./tor/bin/run_tor & bin/boot
+tor: $PORT=8080 ./tor/bin/run_tor & & node .
