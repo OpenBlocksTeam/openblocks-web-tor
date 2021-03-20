@@ -1,0 +1,12 @@
+# HiddenServiceDir: where tor looks for "private_key" and "hostname" files
+HiddenServiceDir <%= ENV['HOME'] || 'app' %>/hidden_service/
+
+# HiddenServicePort: a VIRTUAL port mapped to the local port for your webserver
+HiddenServicePort 80 127.0.0.1:8080
+HiddenServicePort 8080 127.0.0.1:8080
+
+# HiddenServiceVersion: This buildpack currently only supports V2 hidden services
+HiddenServiceVersion 2
+
+# Send logs at level "notice" or higher to stdout
+Log notice stdout
