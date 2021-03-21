@@ -1,6 +1,6 @@
 const expressJS = require('express');
 const expressApp = expressJS();
-const expressPort = 8080;
+const expressPort = 8069;
 
 expressApp.use(expressJS.static('public'));
 
